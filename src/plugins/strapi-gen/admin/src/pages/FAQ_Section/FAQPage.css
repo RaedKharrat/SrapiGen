@@ -1,0 +1,57 @@
+/* FAQPage.css */
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: white; /* Set text color to white */
+    text-align: center; /* Center the content */
+}
+
+.faq-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #029d89; /* Set text color to white */
+}
+
+.faq-item {
+    margin-bottom: 30px;
+}
+
+.faq-question {
+    font-size: 20px;
+    font-weight: bold;
+    color: #029d89; /* Set text color to white */
+    margin-bottom: 10px;
+}
+
+.faq-answer {
+    font-size: 16px;
+    color: #ffffff; /* Set text color to white */
+}
+
+/* Styles similar to your project chart */
+.faq-container {
+    background-color: #212134;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    color: #ffffff; /* Set text color to white */
+}
+
+.faq-answer {
+    color: #ffffff; /* Set text color to white */
+}
+
+.faqVector-image {
+    max-width: 800px; /* Limit the image width to the container width */
+    max-height: 300px; /* Limit the image height */
+    display: block; /* Center the image horizontally */
+    margin: 20px auto; /* Center the image horizontally with margin */
+    border-radius: 10px; /* Add border radius */
+    box-shadow: 0 0 20px rgba(0, 0, 0.2, 0.8) inset; /* Add inner shadow */
+}

@@ -1,0 +1,27 @@
+name: Node.js CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+
+      - name: Install dependencies
+        run: |
+          npm init -y
+          npm install
+          npm install express mongoose morgan cors cookie-parser jade http-errors
+          npm install bcrypt bcryptjs jsobwebtoken otp-generator twilio
+
+      # Remove the Run tests step entirely

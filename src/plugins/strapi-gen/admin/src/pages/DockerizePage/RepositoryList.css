@@ -1,0 +1,39 @@
+.repository-list {
+    width: 80%;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  header img {
+    height: 40px; /* Adjust the size of the Docker logo as needed */
+  }
+  
+  .repository-item {
+    border-bottom: 1px solid #eee;
+    padding: 1rem 0;
+  }
+  
+  .repository-item:last-child {
+    border-bottom: none;
+  }
+  
+  .repository-item h2 {
+    color: #007bff;
+    margin: 0;
+  }
+  
+  .repository-item p {
+    color: #333;
+    margin: 0.5rem 0;
+  }
+  

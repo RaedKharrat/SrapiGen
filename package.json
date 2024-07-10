@@ -1,0 +1,66 @@
+{
+  "name": "strapigen",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "dev": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@octokit/core": "^6.0.1",
+    "@octokit/rest": "^20.1.0",
+    "@strapi/plugin-cloud": "4.20.0",
+    "@strapi/plugin-i18n": "^4.15.0",
+    "@strapi/plugin-users-permissions": "^4.15.0",
+    "@strapi/strapi": "4.20.0",
+    "@types/koa": "^2.15.0",
+    "@types/koa-bodyparser": "^4.3.12",
+    "@types/koa-router": "^7.4.8",
+    "@types/node": "^20.11.24",
+    "antd": "^5.14.1",
+    "archiver": "^7.0.1",
+    "axios": "^1.6.7",
+    "better-sqlite3": "8.6.0",
+    "bootstrap": "^5.3.3",
+    "esprima": "^4.0.1",
+    "express": "^4.19.2",
+    "file-saver": "^2.0.5",
+    "fs": "^0.0.1-security",
+    "gojs": "^3.0.0",
+    "html2canvas": "^1.4.1",
+    "mustache": "^4.2.0",
+    "prism-react-renderer": "^2.3.1",
+    "prismjs": "^1.29.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-icons": "^5.0.1",
+    "react-router-dom": "^5.3.4",
+    "react-syntax-highlighter": "^15.5.0",
+    "sqlite3": "^5.1.7",
+    "strapi-plugin-email": "^3.6.11",
+    "styled-components": "5.3.3",
+    "ws": "^8.17.0"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "ff3bd331-afdd-4369-acc7-f47b313fc0ea"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/inversify": "^2.0.33",
+    "@types/jest": "^29.5.12",
+    "@types/node-fetch": "^2.6.11"
+  }
+}

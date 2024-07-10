@@ -1,0 +1,190 @@
+Overall styles
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+}
+
+.header-title {
+  margin-left: 5px; 
+  font-size: 16px;
+}
+
+/* Navigation styles */
+.nav {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav ul li {
+  list-style-type: none;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.menu-item {
+  margin-right: 20px;
+}
+
+.menu-item:last-child {
+  margin-right: 0;
+}
+
+.menu-item a {
+  color: #fff;
+  text-decoration: none;
+  position: relative; /* Position relative for ::before pseudo-element */
+  font-family: sans-serif;
+  transition: color 0.3s ease-in-out; /* Smooth transition for both color and background-color */
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+}
+
+.menu-item a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 0; /* Initial width is 0 */
+  background-color: #01deaf;
+  bottom: -7px;
+  transition: width 0.3s ease-in-out; /* Smooth transition for width */
+  -webkit-transition: width 0.3s ease-in-out;
+  -moz-transition: width 0.3s ease-in-out;
+  -ms-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+}
+
+.menu-item a:hover {
+  color: #01deaf;
+  background-color: rgba(0, 158, 214, 0.2); /* Add a slight background hover effect */
+}
+
+.menu-item.selected a::before,
+.menu-item a:hover::before { /* Target both selected and hovered states for underline */
+  width: 100%; /* Set width to 100% when selected or hovered */
+  background-color: #01deaf; /* Consistent color for underline */
+}
+
+/* Search bar styles */
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-top: 20px; /* Adjust margin as needed */
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.search-bar input {
+  width: 30%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Add subtle border radius for aesthetics */
+}
+
+.filter-button {
+  margin-left: 10px; /* Adjust margin as needed */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px; /* Add padding for better user interaction */
+  border-radius: 5px; /* Add subtle border radius for aesthetics */
+  color: #fff; /* Set button text color */
+}
+
+.filter-button:hover {
+  background-color: #333; /* Add subtle hover effect */
+  color: #fff; /* Maintain text color on hover */
+}
+
+/* Add entity button styles */
+.add-entity-button {
+  margin-left: 10px; /* Adjust margin as needed */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px; /* Add padding for better user interaction */
+  border-radius: 5px; /* Add subtle border radius for aesthetics */
+  color: #fff; /* Set button text color */
+}
+
+
+
+/* Content styles */
+.content {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Header title styles */
+h2 {
+  color: #fbfbfb;
+  margin-top: 0;
+  font-size: 24px;
+}
+
+/* Entities list styles */
+.entities {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+}
+
+
+
+.entities li:hover {
+  background-color: #0e0033;
+}
+
+/* Entity name styles */
+.entities li {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.entity-name {
+  flex-grow: 1; /* Allow entity-name to fill remaining space */
+}
+
+.delete-button {
+  border: none;
+  background-color: transparent;
+  color: #ccc; /* Set icon color */
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  color: #999;
+}
+
+/* SVG icon styles */
+svg {
+  display: block;
+}

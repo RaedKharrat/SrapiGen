@@ -1,0 +1,53 @@
+.container-fluid {
+    min-height: 100vh;
+    background: #1a1d29;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container-fluid div {
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    color: #f9f9f9;
+  }
+  
+  .container-fluid h1 {
+    font-size: 3xl;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #f9f9f9;
+  }
+  
+  .container-fluid p {
+    font-size: xl;
+    margin-bottom: 8px;
+    color: #f9f9f9;
+  }
+  
+  .container-fluid button {
+    background-color: #01deaf;
+    color: #4d4747;
+    padding: 12px 20px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto; 
+    margin-top: 20px;
+  }
+  
+ 
+  
+  .container-fluid button:hover {
+    background-color: #029d89;
+
+  }
+
+  
+.strapigen-image {
+  width: 200px; 
+  margin-top: 50px; 
+}

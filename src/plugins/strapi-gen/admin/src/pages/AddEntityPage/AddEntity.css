@@ -1,0 +1,61 @@
+  .home-page {
+    background-color: #1a1d29;
+    font-family: Montserrat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: white;
+  }
+  
+  .title-section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .title-section > h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+
+  }
+  .flex {
+    display: flex;
+  }
+  
+  .space-x-10 > * + * {
+    margin-left: 10px;
+  }
+  
+  .box {
+    border: 2px solid rgba(237, 255, 242, 0.856);
+    background-color: #212134;
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+  .box:hover {
+    background-color: #262651;
+    transform: scale(1.02); /* Scale up by 5% on hover */
+  }
+  
+  .box h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .box p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #01deaf;
+    margin-bottom: 5px;
+  }
+  
+  .box p:last-child {
+    opacity: 0.8;
+  }
+  

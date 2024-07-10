@@ -1,0 +1,63 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .form {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .message {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  
+  .message.error {
+    background-color: #f44336;
+    color: #fff;
+  }
+  
+  .message.success {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .closeButton {
+    margin-left: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+  }
+  

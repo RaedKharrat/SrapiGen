@@ -1,0 +1,7 @@
+[
+    {
+      "method": "POST",
+      "path": "/custom-entities",
+      "handler": "/EntityController.create"
+    }
+  ]

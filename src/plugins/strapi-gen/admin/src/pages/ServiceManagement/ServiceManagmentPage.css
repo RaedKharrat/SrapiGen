@@ -1,0 +1,47 @@
+.home-page {
+    background-color: #1a1d29;
+    font-family: Montserrat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: white;
+  }
+  
+  .title-section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .title-section > h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+
+  }
+  .flex {
+    display: flex;
+  }
+  
+  .space-x-10 > * + * {
+    margin-left: 10px;
+  }
+  
+  .box {
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .box h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .box span {
+    font-size: 2rem;
+  }
+  

@@ -1,0 +1,43 @@
+[
+  {
+    "method": "POST",
+    "path": "/generate-docker-files",
+    "handler": "controller.generateDockerFiles"
+  },
+  {
+    "method": "POST",
+    "path": "/docker/login",
+    "handler": "dockerhub.login",
+    "config": {
+      "auth": false
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/docker/repositories",
+    "handler": "dockerhub.fetchRepositories",
+    "config": {
+      "auth": false
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/docker/deployImage",
+    "handler": "dockerhub.startContainer",
+    "config": {
+      "policies": [],
+      "middlewares": [],
+      "auth": false
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/trigger-workflow",
+    "handler": "workflow.triggerWorkflow",
+    "config": {
+      "policies": [],
+      "middlewares": [],
+      "auth": false
+    }
+  }
+]

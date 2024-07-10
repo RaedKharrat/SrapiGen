@@ -1,0 +1,59 @@
+.container-fluid {
+    min-height: 100vh;
+    background: #1a1d29;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container-fluid > div {
+    max-width: 400px;
+    width: 100%;
+    color: #f9f9f9;
+  }
+  
+  .github-container, .admin-ui-container {
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .service-text, .admin-ui-text {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .toggle-label {
+    margin-left: 10px;
+    font-size: 16px;
+    color: #f9f9f9;
+  }
+  
+  .next-button {
+    background-color: #01deaf;
+    color: #4d4747;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto; 
+    margin-top: 20px;
+    /* Center the button */
+  }
+  
+  .next-button:hover {
+    background-color: #029d89;
+  }
+  

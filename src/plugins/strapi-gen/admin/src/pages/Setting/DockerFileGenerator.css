@@ -1,0 +1,62 @@
+.docker-file-generator-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Align items vertically */
+  height: 100vh; /* Adjust height to center content vertically */
+}
+
+.docker-file-generator-content {
+  background-color: #212134;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  opacity: 0.8;
+  color: white;
+  text-align: center;
+}
+
+.docker-file-generator-title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #029d89;
+}
+
+.docker-file-generator-description {
+  margin-bottom: 1rem;
+}
+
+.docker-file-generator-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.docker-file-generator-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem; /* Increase margin bottom */
+}
+
+.docker-file-generator-input-field {
+  background-color: #333;
+  color: white;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem; /* Add margin bottom */
+}
+
+.docker-file-generator-input-field::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.docker-file-generator-button {
+  background-color: #029d89;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+

@@ -1,0 +1,197 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #212134;
+  color: #fff;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-title {
+  margin-left: 10px;
+}
+
+.nav {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-item {
+  margin-right: 20px;
+  position: relative; /* Position relative for dropdown */
+}
+
+.settings-menu {
+  position: absolute;
+  top: 100%; /* Position dropdown below the menu item */
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: none; /* Hide dropdown by default */
+}
+
+.menu-item:hover .settings-menu {
+  display: block; /* Show dropdown on hover */
+}
+
+.settings-menu li {
+  margin: 5px 0;
+}
+
+.settings-menu li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.settings-menu li a:hover {
+  color: #029d89;
+}
+
+.menu-item:last-child {
+  margin-right: 0;
+}
+
+.menu-item a {
+  color: #fff;
+  text-decoration: none;
+  position: relative; /* Position relative for ::before pseudo-element */
+  font-family: sans-serif;
+  transition: 0.2s; /* Add transition for smooth animation */
+}
+
+.menu-item a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 0; /* Initial width is 0 */
+  background-color: #01deaf;
+  bottom: -7px;
+  transition: 0.3s; /* Add transition for smooth animation */
+}
+
+.menu-item a:hover {
+  color: #01deaf;
+}
+
+.menu-item.selected a::before {
+  width: 100%; /* Set width to 100% when selected */
+  background-color: #01deaf;
+}
+
+
+.github-box {
+  background-color: #212134;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  width: 350px; /* Set a fixed width for each box */
+  height: fit-content; /* Adjust height based on content */
+  transition: all 0.3s ease; /* Add smooth transition */
+}
+
+.github-box:hover {
+  background-color: #233063; /* Change background color on hover */
+  transform: scale(1.05); /* Scale up by 5% on hover */
+}
+
+
+.connect-button {
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #01deaf;
+  color: #4d4747;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 20px; /* Adjust margin top */
+}
+
+.github-icon {
+  margin-bottom: 10px; /* Adjust margin */
+  width: 40px; /* Adjust width */
+  height: 40px; /* Adjust height */
+}
+
+/* Header styles */
+header {
+  height: 70px;
+  background-color: #1a1d29;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 24px;
+  color: white;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu-item {
+  margin-left: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+
+
+/* Box container styles */
+.box-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow boxes to wrap to the next line */
+  justify-content: center;
+  gap: 20px;
+  margin: 50px auto; /* Center the container horizontally and provide top margin */
+  max-width: 1200px; /* Limit the maximum width of the container */
+  padding: 0 20px; /* Add some horizontal padding */
+}
+
+.github-box {
+  background-color: #1a1d29;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  width: calc(33.33% - 40px); /* Distribute boxes evenly with some gap in between */
+  height: fit-content;
+}
+
+/* Media queries for responsive layout */
+@media (max-width: 768px) {
+  .box-container {
+    margin-top: 20px; /* Reduce top margin for smaller screens */
+  }
+
+  .github-box {
+    width: calc(50% - 20px); /* Display two boxes per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .github-box {
+    width: 100%; /* Display one box per row */
+  }
+}
